@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "adansifs-genetics:block/fossil_block"
+    }
+}

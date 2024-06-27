@@ -1,5 +1,8 @@
 package net.adansif.genetics;
 
+import net.adansif.genetics.block.ModBlock;
+import net.adansif.genetics.item.ModItem;
+import net.adansif.genetics.item.ModItemGroup;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,9 +14,9 @@ public class AdansifsGenetics implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		ModItemGroup.registerItemGroup();
+		ModItem.registerModItems();
+		ModBlock.registerModBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}
